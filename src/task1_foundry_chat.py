@@ -5,7 +5,6 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
-
 endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
 deployment_name = "gpt-5.4-mini"
 token_provider = get_bearer_token_provider(DefaultAzureCredential(), "https://ai.azure.com/.default")
