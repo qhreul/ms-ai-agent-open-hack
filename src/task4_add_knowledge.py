@@ -17,7 +17,7 @@ OPENAI_MODEL = os.getenv("AZURE_OPENAI_MODEL")
 KNOWLEDGE_FILE_PATH = Path("knowledge_base").resolve()
 
 if __name__ == "__main__":
-    agent_name = "pizza-ordering-agent"
+    agent_name = "pizza-ordering-agent-with-knowledge"
     
     # Create project and openai clients to call Foundry API
     project = AIProjectClient(
@@ -40,7 +40,7 @@ if __name__ == "__main__":
             print(f"Uploaded: {markdown_file.name}")
 
     agent = project.agents.create_version(
-        agent_name="pizza-ordering-agent-with-knowledge",
+        agent_name=agent_name,
         definition=PromptAgentDefinition(
             model=OPENAI_MODEL,
             instructions=(
