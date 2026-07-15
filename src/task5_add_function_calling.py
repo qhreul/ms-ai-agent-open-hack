@@ -6,7 +6,6 @@ from openai.types.responses.response_input_param import FunctionCallOutput, Resp
 
 from dotenv import load_dotenv
 import json
-from pathlib import Path
 import os
 
 load_dotenv()
