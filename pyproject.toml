@@ -1,0 +1,23 @@
+[project]
+name = "ms-ai-agent-open-hack"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Quentin H. Reul", email = "Quentin.H.Reul@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12,<3.14"
+keywords = ["azure foundry", "agentic ai", "open hack"]
+
+[project.urls]
+Homepage = "https://ms-workshops.cloudevents.ai/ms-innovation-workshops/events/44058190-b08f-48ce-9cc1-538dc2d9511f"
+Repository = "https://github.com/qhreul/ms-ai-agent-open-hack"
+
+[tool.poetry]
+package-mode = false
+
+[tool.poetry.dependencies]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
